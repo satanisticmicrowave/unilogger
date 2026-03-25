@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unilogger — Централизованный микросервис логирования</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+        }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        p { font-size: 1.3rem; opacity: 0.9; }
+        .endpoints {
+            margin-top: 50px;
+            text-align: left;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>unilogger</h1>
+    <p>Централизованный микросервис логирования с поддержкой тегов и нескольких синков</p>
+
+    <div class="endpoints">
+        <h2>Доступные API эндпоинты</h2>
+        <ul>
+            <li><strong>POST</strong> <code>/api/logs</code> — отправить лог</li>
+            <li><strong>GET</strong>  <code>/api/logs</code> — получить список логов (с фильтрами)</li>
+            <li><strong>GET</strong>  <code>/viewer</code> — React-страница просмотра логов (по API-ключу)</li>
+            <li><strong>GET</strong>  <code>/health</code> — проверка здоровья сервиса</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 40px; opacity: 0.7;">
+        Документация и SDK будут доступны на GitHub<br>
+        <strong>unilogger</strong> • PHP 8.5 + Symfony 8
+    </p>
+</div>
+</body>
+</html>

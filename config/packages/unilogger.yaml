@@ -1,0 +1,4 @@
+unilogger:
+    sinks:
+        database:
+            enabled: true
