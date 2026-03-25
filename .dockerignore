@@ -1,0 +1,14 @@
+.git
+.idea
+.gitignore
+README.md
+.env.local
+.env.*.local
+var/
+vendor/
+tests/
+docker-compose.yml
+.dockerignore
+Dockerfile
+supervisord.log
+supervisord.pid
